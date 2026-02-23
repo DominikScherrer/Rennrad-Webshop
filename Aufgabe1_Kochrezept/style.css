@@ -3,33 +3,61 @@ body {
   background-color: lightblue;
 }
 
-.content {
-  background-color: white;
-  text-align: center;
-  margin: 200px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 30px;
-  border-radius: 20px;
-}
-
-.content ul,
-.content ol {
-  text-align: left;
-  display: inline-block;
-}
-
-table, th, td {
+table,
+th,
+td {
   margin: auto;
   border: 1px solid black;
   border-collapse: collapse;
+  width: 60%;
+  padding: 8px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 th {
   background-color: lightgray;
 }
 
-img {
+nav {
+  background-color: white;
+  margin: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.index {
+  flex: 1;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  color: black;
+  background-color: lightblue;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.content {
+  background-color: white;
+  text-align: center;
+  margin: 200px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+
+.points,
+.numberpoints {
+  text-align: left;
+  display: inline-block;
+}
+
+.recipe-image {
   display: block;
   margin: 20px auto;
   width: 100%;
