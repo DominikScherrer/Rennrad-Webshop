@@ -8,8 +8,21 @@
   </head>
   <body>
     <header>
+      <img class="site-logo" src="images/logo.webp" alt="Logo" />
       <h1>Rennrad Webshop</h1>
-      <h2>Produkte</h2>
+      <div class="header-row">
+        <h2>Produkte</h2>
+        <form class="site-search" action="#" role="search">
+          <input
+            name="q"
+            type="search"
+            placeholder="Suche"
+            aria-label="Suche"
+            autocomplete="off"
+          />
+          <button type="submit">Suche</button>
+        </form>
+      </div>
       <nav aria-label="Hauptnavigation">
         <a href="home.html">Startseite</a>
         <a href="products.html">Produkte</a>
@@ -18,7 +31,20 @@
     </header>
     <main>
       <section aria-labelledby="new-products-title">
-        <h3 id="new-products-title">Neue Produkte</h3>
+        <div class="section-head">
+          <h3 id="new-products-title">Alle Produkte</h3>
+          <form class="category-filter" action="#" aria-label="Kategoriefilter">
+            <label for="category">Kategorie</label>
+            <select id="category" name="category">
+              <option value="all">Alle</option>
+              <option value="aero">Aero</option>
+              <option value="endurance">Endurance</option>
+              <option value="all-road">All-Road</option>
+              <option value="race">Race</option>
+              <option value="gravel">Gravel</option>
+            </select>
+          </form>
+        </div>
         <ul class="new-products">
           <li class="new-products-item">
             <div class="img-wrapper">
@@ -112,6 +138,51 @@
             <p class="product-desc">
               Leichtes Kletterrad mit edler Ausstattung für anspruchsvolle
               Pässe.
+            </p>
+          </li>
+          <li class="new-products-item">
+            <div class="img-wrapper">
+              <img
+                class="item-img"
+                src="images/C25_C11074U_LAB71_SuperSix_EVO_Team_REF_PD.webp"
+                alt="Cannondale SuperSix EVO Team"
+                loading="lazy"
+              />
+            </div>
+            <h4 class="product-title">Cannondale SuperSix EVO Team</h4>
+            <p class="product-price">6.800 CHF</p>
+            <p class="product-desc">
+              Leichtes und aerodynamisches Rennrad für Rennfahrer und ambitionierte Hobbyfahrer.
+            </p>
+          </li>
+          <li class="new-products-item">
+            <div class="img-wrapper">
+              <img
+                class="item-img"
+                src="images/C25_C11135U_LAB71_SuperSix_EVO_BMB_PD.webp"
+                alt="Cannondale SuperSix EVO"
+                loading="lazy"
+              />
+            </div>
+            <h4 class="product-title">Cannondale SuperSix EVO</h4>
+            <p class="product-price">5.200 CHF</p>
+            <p class="product-desc">
+              Ausgewogenes Allround-Rennrad mit hervorragender Steifigkeit und Komfort.
+            </p>
+          </li>
+          <li class="new-products-item">
+            <div class="img-wrapper">
+              <img
+                class="item-img"
+                src="images/C25_C15135U_Topstone_Crb_LTD_Lefty_AXS_TGE_PD.webp"
+                alt="Cannondale Topstone Carbon LTD"
+                loading="lazy"
+              />
+            </div>
+            <h4 class="product-title">Cannondale Topstone Carbon LTD</h4>
+            <p class="product-price">4.500 CHF</p>
+            <p class="product-desc">
+              Hochwertiges Gravel-Bike mit Lefty-Gabel für maximale Performance auf unbefestigten Wegen.
             </p>
           </li>
         </ul>

@@ -8,14 +8,77 @@
   </head>
   <body>
     <header>
+      <img class="site-logo" src="images/logo.webp" alt="Logo" />
       <h1>Rennrad Webshop</h1>
-      <h2>Kontakt</h2>
+      <div class="header-row">
+        <h2>Kontakt</h2>
+        <form class="site-search" action="#" role="search">
+          <input
+            name="q"
+            type="search"
+            placeholder="Suche"
+            aria-label="Suche"
+            autocomplete="off"
+          />
+          <button type="submit">Suche</button>
+        </form>
+      </div>
       <nav aria-label="Hauptnavigation">
         <a href="home.html">Startseite</a>
         <a href="products.html">Produkte</a>
         <a href="contact.html">Kontakt</a>
       </nav>
     </header>
+    <main>
+      <section class="about-us" aria-labelledby="about-title">
+        <h3 id="about-title">Über uns</h3>
+        <p>
+          Wir sind der Rennrad-Webshop für Fahrerinnen und Fahrer, die Wert auf
+          Qualität, Beratung und einen reibungslosen Service legen. Egal ob
+          Aero, Endurance oder Gravel: Bei uns findest du passende Bikes für
+          deinen Stil.
+        </p>
+
+        <div class="about-us-grid">
+          <article class="about-card">
+            <h4>Unsere Mission</h4>
+            <p>
+              Rennräder sollen sich leicht entscheiden lassen. Deshalb kombinieren
+              wir klare Infos mit einem schnellen Bestellprozess.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h4>Unsere Werte</h4>
+            <p>
+              Qualität, Ehrlichkeit und Kundennähe. Wir arbeiten mit fairen
+              Lieferpartnern und achten auf nachhaltige Lösungen.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <h4>Zahlen & Fakten</h4>
+            <p>
+              Seit 2023 wächst unser Sortiment stetig. Tausende zufriedene
+              Kundinnen und Kunden, schnelle Antworten und unkomplizierte
+              Rückgabe.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <section class="contact-form-section" aria-labelledby="contact-form-title">
+      <h3 id="contact-form-title">Kontaktformular</h3>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Dein Name" required />
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" type="email" placeholder="deine@email.ch" required />
+        <label for="message">Nachricht</label>
+        <textarea id="message" name="message" rows="5" placeholder="Deine Nachricht" required></textarea>
+        <button type="submit">Absenden</button>
+      </form>
+    </section>
     <footer>
       <section class="newsletter" aria-labelledby="newsletter-title">
         <h3 id="newsletter-title">Newsletter Abo</h3>
